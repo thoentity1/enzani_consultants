@@ -1,190 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enzani Consultants | Training & Human Capital Development</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Enzani Consultants | Training • Development • Compliance • Growth</title>
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
 
-    <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-        body{
-            font-family:'Poppins',sans-serif;
-            color:#333;
-        }
+body{
+background:#ffffff;
+color:#6B7280;
+line-height:1.7;
+}
 
-        .navbar{
-            background:#0B3D91;
-        }
+/* HEADER */
 
-        .navbar-brand,
-        .navbar-nav .nav-link{
-            color:white !important;
-            font-weight:500;
-        }
+header{
+background:#0B2346;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
 
-        .navbar-nav .nav-link:hover{
-            color:#D4AF37 !important;
-        }
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ffffff;
+}
 
-        .hero{
-            background:linear-gradient(rgba(11,61,145,.8),rgba(11,61,145,.8)),
-            url('images/training.jpg');
-            background-size:cover;
-            background-position:center;
-            min-height:600px;
-            display:flex;
-            align-items:center;
-            color:white;
-        }
+.logo span{
+color:#C9A227;
+}
 
-        .hero h1{
-            font-size:3.2rem;
-            font-weight:700;
-        }
+nav ul{
+display:flex;
+list-style:none;
+}
 
-        .btn-gold{
-            background:#D4AF37;
-            color:#000;
-            font-weight:600;
-        }
+nav ul li{
+margin-left:30px;
+}
 
-        .btn-gold:hover{
-            background:#c79f2d;
-        }
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
 
-        .section-title{
-            color:#0B3D91;
-            font-weight:700;
-            margin-bottom:20px;
-        }
+nav ul li a:hover{
+color:#C9A227;
+}
 
-        .service-card{
-            transition:.3s;
-            border:none;
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
-        }
+/* HERO */
 
-        .service-card:hover{
-            transform:translateY(-8px);
-        }
+.hero{
 
-        .service-icon{
-            font-size:45px;
-            color:#D4AF37;
-        }
+padding:90px 8%;
 
-        .why-section{
-            background:#f7f7f7;
-        }
+display:flex;
 
-        .feature-box{
-            padding:20px;
-        }
+justify-content:space-between;
 
-        footer{
-            background:#0B3D91;
-            color:white;
-        }
+align-items:center;
 
-        footer a{
-            color:white;
-            text-decoration:none;
-        }
+flex-wrap:wrap;
 
-        .whatsapp{
-            position:fixed;
-            bottom:20px;
-            right:20px;
-            background:#25D366;
-            color:white;
-            width:60px;
-            height:60px;
-            border-radius:50%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            font-size:30px;
-            text-decoration:none;
-            z-index:999;
-        }
+}
 
-    </style>
+.hero-text{
+
+flex:1;
+
+min-width:350px;
+
+}
+
+.hero-text h1{
+
+font-size:52px;
+
+color:#0B2346;
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+.hero-text span{
+
+color:#C9A227;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+margin-bottom:35px;
+
+max-width:600px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 34px;
+
+background:#C9A227;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0B2346;
+
+}
+
+.hero-image{
+
+flex:1;
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:85%;
+
+max-width:500px;
+
+}
+
+/* SECTION */
+
+section{
+
+padding:80px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:38px;
+
+color:#0B2346;
+
+margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+/* ABOUT */
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+
+border-radius:12px;
+
+}
+
+.about h3{
+
+color:#0B2346;
+
+font-size:30px;
+
+margin-bottom:20px;
+
+}
+
+/* SERVICES */
+
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+border-top:5px solid #C9A227;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+background:#0B2346;
+
+color:white;
+
+transform:translateY(-10px);
+
+}
+
+.card:hover h3{
+
+color:white;
+
+}
+
+.card h3{
+
+color:#0B2346;
+
+margin-bottom:15px;
+
+}
+
+/* WHY */
+
+.why{
+
+background:#f8f8f8;
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.feature{
+
+padding:30px;
+
+}
+
+.feature h3{
+
+color:#0B2346;
+
+margin-top:20px;
+
+}
+
+/* CTA */
+
+.cta{
+
+background:#0B2346;
+
+text-align:center;
+
+color:white;
+
+}
+
+.cta h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+margin-bottom:35px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#07172d;
+
+color:white;
+
+padding:60px 8%;
+
+text-align:center;
+
+}
+
+footer h2{
+
+margin-bottom:20px;
+
+}
+
+footer p{
+
+margin:8px 0;
+
+}
+
+footer a{
+
+color:#C9A227;
+
+text-decoration:none;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+background:#25D366;
+
+color:white;
+
+width:60px;
+
+height:60px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+}
+
+</style>
 
 </head>
+
 <body>
 
-<!-- Navigation -->
+<header>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="logo">
 
-<div class="container">
+ENZANI <span>CONSULTANTS</span>
 
-<a class="navbar-brand" href="#">
-<img src="images/logo.png" width="50" class="me-2">
-Enzani Consultants
-</a>
+</div>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
+<nav>
 
-<div class="collapse navbar-collapse" id="menu">
+<ul>
 
-<ul class="navbar-nav ms-auto">
+<li><a href="index.html">Home</a></li>
 
-<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
 
-<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+<li><a href="training.html">Training</a></li>
 
-<li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+<li><a href="learnerships.html">Learnerships</a></li>
 
-<li class="nav-item"><a class="nav-link" href="learnerships.html">Learnerships</a></li>
+<li><a href="bursary.html">Bursaries</a></li>
 
-<li class="nav-item"><a class="nav-link" href="bursary.html">Bursary Management</a></li>
+<li><a href="coaching.html">Coaching</a></li>
 
-<li class="nav-item"><a class="nav-link" href="coaching.html">Executive Coaching</a></li>
+<li><a href="seta.html">SETA</a></li>
 
-<li class="nav-item"><a class="nav-link" href="seta.html">SETA Support</a></li>
-
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
-</div>
-
-</div>
-
 </nav>
 
-<!-- Hero -->
+</header>
 
 <section class="hero">
 
-<div class="container">
+<div class="hero-text">
 
-<div class="row">
+<h1>
 
-<div class="col-lg-7">
+Empowering People.<br>
 
-<h1>Empowering People.<br>Developing Organisations.</h1>
+<span>Enhancing Performance.</span><br>
 
-<p class="lead mt-4">
+Driving Success.
 
-Professional Training • Leadership Development • Human Capital Consulting • SETA Support Services
+</h1>
+
+<p>
+
+Enzani Consultants partners with businesses, government departments and SETAs to deliver world-class training, leadership development, learnerships, internships, bursary management and human capital consulting solutions.
 
 </p>
 
-<a href="contact.html" class="btn btn-gold btn-lg mt-3">
+<a href="contact.html" class="btn">
 
 Request a Consultation
 
@@ -192,47 +499,57 @@ Request a Consultation
 
 </div>
 
-</div>
+<div class="hero-image">
+
+<img src="images/hero.png" alt="Training">
 
 </div>
 
 </section>
 
-<!-- About -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-lg-6">
+<section>
 
 <h2 class="section-title">
 
-Welcome to Enzani Consultants
+Who We Are
 
 </h2>
 
-<p>
+<p class="section-subtitle">
 
-Enzani Consultants is committed to empowering organisations through innovative skills development, leadership programmes, executive coaching and human capital consulting.
-
-</p>
-
-<p>
-
-Our experienced consultants partner with businesses, government departments and institutions to deliver practical learning solutions that improve organisational performance.
+Professional Training & Human Capital Development Specialists
 
 </p>
 
+<div class="about">
+
+<div>
+
+<img src="images/about.jpg">
+
 </div>
 
-<div class="col-lg-6">
+<div>
 
-<img src="images/about.jpg" class="img-fluid rounded shadow">
+<h3>
 
-</div>
+Building Skills. Developing Leaders.
+
+</h3>
+
+<p>
+
+Enzani Consultants provides innovative learning solutions designed to improve workforce capability and organisational performance. We assist businesses through accredited training programmes, executive coaching, SETA compliance support and strategic human capital development.
+
+</p>
+
+<br>
+
+<a href="about.html" class="btn">
+
+Learn More
+
+</a>
 
 </div>
 
@@ -240,67 +557,91 @@ Our experienced consultants partner with businesses, government departments and 
 
 </section>
 
-<!-- Services -->
+<section>
 
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="section-title text-center">
+<h2 class="section-title">
 
 Our Services
 
 </h2>
 
-<div class="row g-4">
+<p class="section-subtitle">
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-mortarboard-fill service-icon"></i>
-<h4 class="mt-3">Corporate Training</h4>
-<p>Professional workplace training solutions.</p>
-</div>
-</div>
+Comprehensive Workforce Development Solutions
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-people-fill service-icon"></i>
-<h4 class="mt-3">Leadership Development</h4>
-<p>Developing confident leaders.</p>
-</div>
-</div>
+</p>
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-briefcase-fill service-icon"></i>
-<h4 class="mt-3">Management Development</h4>
-<p>Empowering managers through practical learning.</p>
-</div>
+<div class="services">
+
+<div class="card">
+
+<h3>Bursary Management</h3>
+
+<p>
+
+Managing bursary programmes from application to reporting.
+
+</p>
+
 </div>
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-person-workspace service-icon"></i>
-<h4 class="mt-3">Executive Coaching</h4>
-<p>Helping leaders achieve their potential.</p>
-</div>
+<div class="card">
+
+<h3>Learnerships & Internships</h3>
+
+<p>
+
+Developing future-ready talent through structured programmes.
+
+</p>
+
 </div>
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-award-fill service-icon"></i>
-<h4 class="mt-3">Bursary Management</h4>
-<p>Professional learner administration services.</p>
-</div>
+<div class="card">
+
+<h3>Corporate Training</h3>
+
+<p>
+
+Professional development programmes tailored to organisational needs.
+
+</p>
+
 </div>
 
-<div class="col-md-4">
-<div class="card service-card p-4 text-center">
-<i class="bi bi-diagram-3-fill service-icon"></i>
-<h4 class="mt-3">SETA Support</h4>
-<p>Compliance and grant support services.</p>
+<div class="card">
+
+<h3>Executive Coaching</h3>
+
+<p>
+
+Empowering executives and leaders for sustainable success.
+
+</p>
+
 </div>
+
+<div class="card">
+
+<h3>Leadership Development</h3>
+
+<p>
+
+Building confident leaders equipped for tomorrow's challenges.
+
+</p>
+
 </div>
+
+<div class="card">
+
+<h3>SETA Support Services</h3>
+
+<p>
+
+Compliance, grants, workplace skills plans and reporting support.
+
+</p>
 
 </div>
 
@@ -308,49 +649,45 @@ Our Services
 
 </section>
 
-<!-- Why Choose -->
+<section class="why">
 
-<section class="py-5 why-section">
-
-<div class="container">
-
-<h2 class="section-title text-center">
+<h2 class="section-title">
 
 Why Choose Enzani Consultants?
 
 </h2>
 
-<div class="row text-center">
+<div class="features">
 
-<div class="col-md-4 feature-box">
-<h5>✔ Experienced Professionals</h5>
-<p>Industry specialists with practical expertise.</p>
+<div class="feature">
+
+<h3>Professional Experts</h3>
+
+<p>Experienced consultants delivering measurable results.</p>
+
 </div>
 
-<div class="col-md-4 feature-box">
-<h5>✔ Tailored Solutions</h5>
-<p>Training programmes designed around your organisation.</p>
+<div class="feature">
+
+<h3>Tailored Solutions</h3>
+
+<p>Every organisation receives customised support.</p>
+
 </div>
 
-<div class="col-md-4 feature-box">
-<h5>✔ National Reach</h5>
-<p>Supporting organisations across South Africa.</p>
+<div class="feature">
+
+<h3>National Reach</h3>
+
+<p>Serving clients across South Africa.</p>
+
 </div>
 
-<div class="col-md-4 feature-box">
-<h5>✔ Human Capital Experts</h5>
-<p>Helping organisations build high-performing teams.</p>
-</div>
+<div class="feature">
 
-<div class="col-md-4 feature-box">
-<h5>✔ Professional Service</h5>
-<p>Committed to quality and measurable outcomes.</p>
-</div>
+<h3>Trusted Partner</h3>
 
-<div class="col-md-4 feature-box">
-<h5>✔ Trusted Partner</h5>
-<p>Building long-term client relationships.</p>
-</div>
+<p>Committed to excellence and long-term relationships.</p>
 
 </div>
 
@@ -358,109 +695,68 @@ Why Choose Enzani Consultants?
 
 </section>
 
-<!-- Call To Action -->
+<section class="cta">
 
-<section class="py-5 text-center">
+<h2>
 
-<div class="container">
-
-<h2 class="section-title">
-
-Ready to Develop Your Workforce?
+Let's Grow Your Organisation Together
 
 </h2>
 
 <p>
 
-Partner with Enzani Consultants to strengthen your organisation through professional learning and development.
+Speak to our consultants about training, leadership development and SETA support.
 
 </p>
 
-<a href="contact.html" class="btn btn-primary btn-lg">
+<a href="contact.html" class="btn">
 
 Contact Us Today
 
 </a>
 
-</div>
-
 </section>
 
-<!-- Footer -->
+<footer>
 
-<footer class="pt-5 pb-3">
+<h2>
 
-<div class="container">
+ENZANI CONSULTANTS
 
-<div class="row">
-
-<div class="col-md-4">
-
-<h4>Enzani Consultants</h4>
+</h2>
 
 <p>
 
-Professional Training
-
-Leadership Development
-
-Human Capital Consulting
+Training • Development • Compliance • Growth
 
 </p>
 
-</div>
+<p>
 
-<div class="col-md-4">
+📞 082 326 6054 | 073 533 4049
 
-<h5>Quick Links</h5>
+</p>
 
-<p><a href="index.html">Home</a></p>
+<p>
 
-<p><a href="about.html">About Us</a></p>
+✉ hello@enzaniconsulting.co.za
 
-<p><a href="training.html">Training</a></p>
+</p>
 
-<p><a href="contact.html">Contact</a></p>
+<p>
 
-</div>
+© 2026 Enzani Consultants. All Rights Reserved.
 
-<div class="col-md-4">
-
-<h5>Contact</h5>
-
-<p><i class="bi bi-telephone"></i> 082 326 6054</p>
-
-<p><i class="bi bi-envelope"></i> info@enzaniconsultants.co.za</p>
-
-<p><i class="bi bi-geo-alt"></i> South Africa</p>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="text-center">
-
-© 2026 Enzani Consultants. All Rights Reserved.<br>
-
-Website Designed & Developed by <strong>The Entity Solutions (Pty) Ltd</strong>
-
-</div>
-
-</div>
+</p>
 
 </footer>
 
-<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/27823266054" target="_blank">
 
-<a href="https://wa.me/27823266054" class="whatsapp" target="_blank">
-
-<i class="bi bi-whatsapp"></i>
+💬
 
 </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>

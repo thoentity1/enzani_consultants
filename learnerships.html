@@ -4,100 +4,198 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Learnerships & Internships | Enzani Consultants</title>
 
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     font-family:'Poppins',sans-serif;
+    background:#FFFFFF;
+    color:#222222;
 }
 
+/* Navigation */
+
 .navbar{
-    background:#0B3D91;
+    background:#0B2346;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link{
-    color:#fff !important;
+    color:#FFFFFF !important;
+    font-weight:500;
 }
 
-.navbar-nav .nav-link:hover{
-    color:#D4AF37 !important;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active{
+    color:#C9A227 !important;
 }
+
+/* Hero Banner */
 
 .banner{
-    background:linear-gradient(rgba(11,61,145,.85),rgba(11,61,145,.85)),
+
+    background:
+    linear-gradient(rgba(11,35,70,.88),rgba(11,35,70,.88)),
     url("images/learnership-banner.jpg");
+
     background-size:cover;
     background-position:center;
-    height:320px;
+
+    min-height:420px;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    color:white;
+
     text-align:center;
+
+    color:white;
+
 }
 
-.section-title{
-    color:#0B3D91;
+.banner h1{
+
+    font-size:3rem;
     font-weight:700;
+
+}
+
+.banner p{
+
+    font-size:1.2rem;
+
+}
+
+/* Sections */
+
+.section-title{
+
+    color:#0B2346;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+/* Cards */
+
+.service-card{
+
+    border:none;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
 }
 
 .icon{
-    font-size:48px;
-    color:#D4AF37;
+
+    font-size:55px;
+    color:#C9A227;
+
 }
 
-.card{
-    border:none;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
+/* Buttons */
 
 .btn-gold{
-    background:#D4AF37;
-    color:#000;
+
+    background:#C9A227;
+    color:white;
+    border:none;
+    padding:12px 30px;
     font-weight:600;
+
 }
 
 .btn-gold:hover{
-    background:#c49a25;
+
+    background:#B68E20;
+    color:white;
+
 }
 
+/* Light Section */
+
+.bg-light{
+
+    background:#F5F5F5 !important;
+
+}
+
+/* Footer */
+
 footer{
-    background:#0B3D91;
+
+    background:#0B2346;
     color:white;
+
+}
+
+footer h4,
+footer h5{
+
+    color:#C9A227;
+
 }
 
 footer a{
+
     color:white;
     text-decoration:none;
+
 }
 
+footer a:hover{
+
+    color:#C9A227;
+
+}
+
+/* WhatsApp */
+
 .whatsapp{
+
     position:fixed;
     bottom:20px;
     right:20px;
+
     width:60px;
     height:60px;
+
     border-radius:50%;
+
     background:#25D366;
     color:white;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-decoration:none;
-    font-size:28px;
+
+    font-size:30px;
+
+    z-index:999;
+
 }
 
 </style>
@@ -114,14 +212,19 @@ footer a{
 
 <a class="navbar-brand" href="index.html">
 
-<img src="images/logo.png" width="50">
+<img src="images/logo.png" width="55" class="me-2">
 
 Enzani Consultants
 
 </a>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
@@ -145,33 +248,42 @@ Enzani Consultants
 
 </nav>
 
-<!-- Banner -->
+<!-- Hero Banner -->
 
 <section class="banner">
 
-<div>
+<div class="container">
 
-<h1 class="display-4 fw-bold">Learnerships & Internships</h1>
+<h1>
 
-<p class="lead">
+Learnerships & Internships
+
+</h1>
+
+<p class="lead mt-3">
 
 Building Skills • Creating Opportunities • Empowering Futures
 
 </p>
 
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Partner With Us
+
+</a>
+
 </div>
 
 </section>
-
 <!-- Introduction -->
 
 <section class="py-5">
 
 <div class="container">
 
-<div class="row">
+<div class="row align-items-center">
 
-<div class="col-lg-10 mx-auto text-center">
+<div class="col-lg-6">
 
 <h2 class="section-title">
 
@@ -181,9 +293,37 @@ Developing Tomorrow's Workforce
 
 <p>
 
-Enzani Consultants partners with employers, SETAs and educational institutions to design, coordinate and manage learnership and internship programmes that equip participants with practical workplace experience while supporting organisational skills development objectives.
+Enzani Consultants partners with employers, SETAs, educational institutions and government departments to design, coordinate and manage learnership and internship programmes that develop workplace skills while supporting organisational growth.
 
 </p>
+
+<p>
+
+Our programmes combine structured learning with practical workplace experience, enabling learners to gain nationally recognised qualifications while assisting employers in building a skilled and productive workforce.
+
+</p>
+
+<p>
+
+We provide end-to-end programme management, ensuring compliance, quality assurance and ongoing learner support throughout every stage of the process.
+
+</p>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Discuss Your Programme
+
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<img src="images/learnership-overview.jpg"
+
+class="img-fluid rounded shadow"
+
+alt="Learnerships and Internships">
 
 </div>
 
@@ -193,45 +333,113 @@ Enzani Consultants partners with employers, SETAs and educational institutions t
 
 </section>
 
-<!-- Services -->
+<!-- Our Services -->
 
-<section class="pb-5">
+<section class="py-5 bg-light">
 
 <div class="container">
 
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Our Learnership & Internship Services
+
+</h2>
+
+<p class="lead">
+
+Professional programme management from planning to successful completion.
+
+</p>
+
+</div>
+
 <div class="row g-4">
 
-<div class="col-md-6">
+<!-- Learnerships -->
 
-<div class="card p-4 h-100 text-center">
+<div class="col-lg-6">
+
+<div class="card service-card p-4 text-center">
 
 <i class="bi bi-award-fill icon"></i>
 
-<h3 class="mt-3">SETA Learnerships</h3>
+<h3 class="mt-4">
+
+SETA Learnerships
+
+</h3>
 
 <p>
 
-Accredited learnership programmes combining structured learning with practical workplace experience, helping organisations build a skilled and compliant workforce.
+Accredited learnership programmes that combine theoretical learning with structured workplace experience, helping organisations build competent employees while supporting national skills development.
 
 </p>
 
-</div>
+<ul class="list-unstyled text-start mt-3">
+
+<li>✔ Accredited learning programmes</li>
+
+<li>✔ Workplace skills development</li>
+
+<li>✔ SETA grant support</li>
+
+<li>✔ BBBEE Skills Development contribution</li>
+
+<li>✔ Learner administration and reporting</li>
+
+</ul>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Enquire Now
+
+</a>
 
 </div>
 
-<div class="col-md-6">
+</div>
 
-<div class="card p-4 h-100 text-center">
+<!-- Internships -->
+
+<div class="col-lg-6">
+
+<div class="card service-card p-4 text-center">
 
 <i class="bi bi-person-workspace icon"></i>
 
-<h3 class="mt-3">Internship Programmes</h3>
+<h3 class="mt-4">
+
+Internship Programmes
+
+</h3>
 
 <p>
 
-Structured internship opportunities that provide graduates and unemployed youth with valuable workplace exposure while assisting employers to develop future talent.
+Structured internship opportunities that provide graduates and unemployed youth with valuable workplace exposure while assisting organisations in developing future professionals.
 
 </p>
+
+<ul class="list-unstyled text-start mt-3">
+
+<li>✔ Graduate placement</li>
+
+<li>✔ Workplace mentoring</li>
+
+<li>✔ Programme coordination</li>
+
+<li>✔ Employer support</li>
+
+<li>✔ Performance monitoring</li>
+
+</ul>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Enquire Now
+
+</a>
 
 </div>
 
@@ -245,11 +453,13 @@ Structured internship opportunities that provide graduates and unemployed youth 
 
 <!-- Benefits -->
 
-<section class="py-5 bg-light">
+<section class="py-5">
 
 <div class="container">
 
-<div class="row">
+<div class="row g-5">
+
+<!-- Employers -->
 
 <div class="col-lg-6">
 
@@ -259,23 +469,29 @@ Benefits for Employers
 
 </h2>
 
-<ul class="list-group">
+<div class="card service-card p-4">
 
-<li class="list-group-item">✔ Improve workforce skills and productivity</li>
+<ul class="list-unstyled">
 
-<li class="list-group-item">✔ Access available SETA grants</li>
+<li class="mb-3">✔ Improve workforce skills and productivity</li>
 
-<li class="list-group-item">✔ Support BBBEE Skills Development initiatives</li>
+<li class="mb-3">✔ Access available SETA grants</li>
 
-<li class="list-group-item">✔ Develop future employees</li>
+<li class="mb-3">✔ Strengthen BBBEE Skills Development scorecard</li>
 
-<li class="list-group-item">✔ Enhance organisational compliance</li>
+<li class="mb-3">✔ Build a sustainable talent pipeline</li>
 
-<li class="list-group-item">✔ Reduce recruitment costs</li>
+<li class="mb-3">✔ Enhance organisational compliance</li>
+
+<li class="mb-3">✔ Reduce recruitment and onboarding costs</li>
 
 </ul>
 
 </div>
+
+</div>
+
+<!-- Learners -->
 
 <div class="col-lg-6">
 
@@ -285,19 +501,21 @@ Benefits for Learners
 
 </h2>
 
-<ul class="list-group">
+<div class="card service-card p-4">
 
-<li class="list-group-item">✔ Practical workplace experience</li>
+<ul class="list-unstyled">
 
-<li class="list-group-item">✔ Nationally recognised qualifications</li>
+<li class="mb-3">✔ Practical workplace experience</li>
 
-<li class="list-group-item">✔ Career development opportunities</li>
+<li class="mb-3">✔ Nationally recognised qualifications</li>
 
-<li class="list-group-item">✔ Increased employability</li>
+<li class="mb-3">✔ Increased employability</li>
 
-<li class="list-group-item">✔ Professional mentoring and support</li>
+<li class="mb-3">✔ Professional mentoring and coaching</li>
 
-<li class="list-group-item">✔ Valuable industry exposure</li>
+<li class="mb-3">✔ Career development opportunities</li>
+
+<li class="mb-3">✔ Valuable industry exposure</li>
 
 </ul>
 
@@ -307,59 +525,180 @@ Benefits for Learners
 
 </div>
 
+</div>
+
+</section>
+<!-- Our Process -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Our Programme Process
+
+</h2>
+
+<p class="lead">
+
+A structured approach that ensures successful programme delivery from start to finish.
+
+</p>
+
+</div>
+
+<div class="row text-center g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<i class="bi bi-person-lines-fill icon"></i>
+
+<h4 class="mt-3">
+
+Consultation
+
+</h4>
+
+<p>
+
+We assess your organisational needs, workforce goals and funding opportunities to recommend the most suitable programme.
+
+</p>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<i class="bi bi-clipboard-check-fill icon"></i>
+
+<h4 class="mt-3">
+
+Planning
+
+</h4>
+
+<p>
+
+Programme planning includes learner recruitment, employer preparation, SETA alignment and implementation scheduling.
+
+</p>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<i class="bi bi-people-fill icon"></i>
+
+<h4 class="mt-3">
+
+Implementation
+
+</h4>
+
+<p>
+
+We coordinate learner placement, workplace mentoring, administration and ongoing programme management.
+
+</p>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<i class="bi bi-graph-up-arrow icon"></i>
+
+<h4 class="mt-3">
+
+Monitoring
+
+</h4>
+
+<p>
+
+Continuous reporting, compliance monitoring and learner support ensure successful programme completion.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- Process -->
+<!-- Why Choose Us -->
 
 <section class="py-5">
 
 <div class="container">
 
-<h2 class="section-title text-center mb-5">
+<div class="text-center mb-5">
 
-Our Process
+<h2 class="section-title">
+
+Why Choose Enzani Consultants?
 
 </h2>
 
+</div>
+
 <div class="row text-center">
 
-<div class="col-md-3">
+<div class="col-lg-4 mb-4">
 
-<i class="bi bi-person-lines-fill icon"></i>
+<i class="bi bi-award-fill icon"></i>
 
-<h5>Consultation</h5>
+<h4 class="mt-3">
 
-<p>Understanding your organisational requirements.</p>
+Industry Expertise
 
-</div>
+</h4>
 
-<div class="col-md-3">
+<p>
 
-<i class="bi bi-clipboard-check-fill icon"></i>
+Extensive experience managing learnerships, internships and workplace skills development programmes.
 
-<h5>Planning</h5>
-
-<p>Selecting suitable learnership and internship programmes.</p>
+</p>
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-4 mb-4">
 
-<i class="bi bi-people-fill icon"></i>
+<i class="bi bi-building-check icon"></i>
 
-<h5>Implementation</h5>
+<h4 class="mt-3">
 
-<p>Recruitment, placement and programme coordination.</p>
+SETA Compliance
+
+</h4>
+
+<p>
+
+Supporting organisations with compliance, grant applications, reporting and programme administration.
+
+</p>
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-4 mb-4">
 
-<i class="bi bi-graph-up-arrow icon"></i>
+<i class="bi bi-person-heart icon"></i>
 
-<h5>Monitoring</h5>
+<h4 class="mt-3">
 
-<p>Continuous reporting, compliance and learner support.</p>
+People Focused
+
+</h4>
+
+<p>
+
+Committed to developing individuals while helping organisations build skilled, high-performing teams.
+
+</p>
 
 </div>
 
@@ -369,27 +708,27 @@ Our Process
 
 </section>
 
-<!-- CTA -->
+<!-- Call To Action -->
 
-<section class="py-5 text-center bg-light">
+<section class="py-5 text-center">
 
 <div class="container">
 
 <h2 class="section-title">
 
-Partner With Enzani Consultants
+Ready to Build Future Talent?
 
 </h2>
 
-<p>
+<p class="lead mb-4">
 
-Whether you are an employer looking to implement a learnership programme or a graduate seeking internship opportunities, our experienced team is ready to assist.
+Whether you are an employer implementing workplace learning programmes or a graduate seeking valuable experience, Enzani Consultants is ready to support your journey.
 
 </p>
 
-<a href="contact.html" class="btn btn-primary btn-lg">
+<a href="contact.html" class="btn btn-gold btn-lg">
 
-Enquire Today
+Contact Our Team
 
 </a>
 
@@ -405,38 +744,103 @@ Enquire Today
 
 <div class="row">
 
-<div class="col-md-4">
+<div class="col-lg-4 mb-4">
 
-<h4>Enzani Consultants</h4>
+<h4>
+
+Enzani Consultants
+
+</h4>
 
 <p>
 
 Professional Training<br>
+
 Leadership Development<br>
+
+Management Development<br>
+
+Executive Coaching<br>
+
 Human Capital Consulting
 
 </p>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-4 mb-4">
 
-<h5>Quick Links</h5>
+<h5>
+
+Quick Links
+
+</h5>
 
 <p><a href="index.html">Home</a></p>
+
 <p><a href="about.html">About Us</a></p>
-<p><a href="training.html">Training</a></p>
-<p><a href="contact.html">Contact</a></p>
+
+<p><a href="training.html">Training Offering</a></p>
+
+<p><a href="learnerships.html">Learnerships & Internships</a></p>
+
+<p><a href="bursary.html">Bursary Management</a></p>
+
+<p><a href="coaching.html">Executive Coaching</a></p>
+
+<p><a href="seta.html">SETA Support Services</a></p>
+
+<p><a href="contact.html">Contact Us</a></p>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-4">
 
-<h5>Contact Us</h5>
+<h5>
 
-<p><i class="bi bi-telephone"></i> 082 326 6054</p>
-<p><i class="bi bi-envelope"></i> info@enzaniconsultants.co.za</p>
-<p><i class="bi bi-geo-alt"></i> South Africa</p>
+Contact Information
+
+</h5>
+
+<p>
+
+<i class="bi bi-telephone-fill"></i>
+
+082 326 6054
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+hello@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+genoulda@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+wendy@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-geo-alt-fill"></i>
+
+South Africa
+
+</p>
 
 </div>
 
@@ -446,8 +850,19 @@ Human Capital Consulting
 
 <div class="text-center">
 
-© 2026 Enzani Consultants. All Rights Reserved.<br>
-Website Designed & Developed by <strong>The Entity Solutions (Pty) Ltd</strong>
+<p class="mb-0">
+
+© 2026 Enzani Consultants. All Rights Reserved.
+
+</p>
+
+<p>
+
+Website Designed & Developed by
+
+<strong>The Entity Solutions (Pty) Ltd</strong>
+
+</p>
 
 </div>
 
@@ -455,11 +870,24 @@ Website Designed & Developed by <strong>The Entity Solutions (Pty) Ltd</strong>
 
 </footer>
 
-<a href="https://wa.me/27823266054" class="whatsapp" target="_blank">
+<!-- WhatsApp -->
+
+<a href="https://wa.me/27823266054"
+
+class="whatsapp"
+
+target="_blank"
+
+title="Chat with us on WhatsApp">
+
 <i class="bi bi-whatsapp"></i>
+
 </a>
+
+<!-- Bootstrap -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
+
+</html>    

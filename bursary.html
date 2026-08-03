@@ -4,101 +4,198 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bursary Management | Enzani Consultants</title>
 
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     font-family:'Poppins',sans-serif;
+    background:#FFFFFF;
+    color:#222;
 }
 
+/* Navigation */
+
 .navbar{
-    background:#0B3D91;
+    background:#0B2346;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link{
-    color:#fff !important;
+    color:#FFFFFF !important;
+    font-weight:500;
 }
 
-.navbar-nav .nav-link:hover{
-    color:#D4AF37 !important;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active{
+    color:#C9A227 !important;
 }
+
+/* Hero */
 
 .banner{
-    background:linear-gradient(rgba(11,61,145,.85),rgba(11,61,145,.85)),
+
+    background:
+    linear-gradient(rgba(11,35,70,.88),rgba(11,35,70,.88)),
     url("images/bursary-banner.jpg");
+
     background-size:cover;
     background-position:center;
-    height:320px;
+
+    min-height:420px;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    color:white;
+
     text-align:center;
+
+    color:white;
+
 }
+
+.banner h1{
+
+    font-size:3rem;
+    font-weight:700;
+
+}
+
+.banner p{
+
+    font-size:1.2rem;
+
+}
+
+/* Sections */
 
 .section-title{
-    color:#0B3D91;
+
+    color:#0B2346;
     font-weight:700;
+    margin-bottom:20px;
+
 }
 
-.card{
+/* Cards */
+
+.service-card{
+
     border:none;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
     height:100%;
+
 }
 
-.card:hover{
+.service-card:hover{
+
     transform:translateY(-8px);
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+
 }
 
 .icon{
-    font-size:48px;
-    color:#D4AF37;
+
+    font-size:55px;
+    color:#C9A227;
+
 }
 
+/* Buttons */
+
 .btn-gold{
-    background:#D4AF37;
-    color:#000;
+
+    background:#C9A227;
+    color:white;
+    border:none;
+    padding:12px 30px;
     font-weight:600;
+
 }
 
 .btn-gold:hover{
-    background:#c59d26;
+
+    background:#B68E20;
+    color:white;
+
 }
 
+/* Light Section */
+
+.bg-light{
+
+    background:#F5F5F5 !important;
+
+}
+
+/* Footer */
+
 footer{
-    background:#0B3D91;
+
+    background:#0B2346;
     color:white;
+
+}
+
+footer h4,
+footer h5{
+
+    color:#C9A227;
+
 }
 
 footer a{
+
     color:white;
     text-decoration:none;
+
 }
 
+footer a:hover{
+
+    color:#C9A227;
+
+}
+
+/* WhatsApp */
+
 .whatsapp{
+
     position:fixed;
-    right:20px;
     bottom:20px;
+    right:20px;
+
     width:60px;
     height:60px;
-    background:#25D366;
+
     border-radius:50%;
+
+    background:#25D366;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     color:white;
     text-decoration:none;
+
     font-size:30px;
+
+    z-index:999;
+
 }
 
 </style>
@@ -115,14 +212,19 @@ footer a{
 
 <a class="navbar-brand" href="index.html">
 
-<img src="images/logo.png" width="50">
+<img src="images/logo.png" width="55" class="me-2">
 
 Enzani Consultants
 
 </a>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
@@ -130,12 +232,19 @@ Enzani Consultants
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
 <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+
 <li class="nav-item"><a class="nav-link" href="learnerships.html">Learnerships</a></li>
+
 <li class="nav-item"><a class="nav-link active" href="bursary.html">Bursary Management</a></li>
+
 <li class="nav-item"><a class="nav-link" href="coaching.html">Executive Coaching</a></li>
+
 <li class="nav-item"><a class="nav-link" href="seta.html">SETA Support</a></li>
+
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
 </ul>
@@ -146,37 +255,42 @@ Enzani Consultants
 
 </nav>
 
-<!-- Banner -->
+<!-- Hero Banner -->
 
 <section class="banner">
 
-<div>
+<div class="container">
 
-<h1 class="display-4 fw-bold">
+<h1>
 
 Bursary Management Services
 
 </h1>
 
-<p class="lead">
+<p class="lead mt-3">
 
-Developing Future Talent Through Effective Bursary Administration
+Developing Future Talent Through Professional Bursary Administration
 
 </p>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Request a Consultation
+
+</a>
 
 </div>
 
 </section>
-
 <!-- Introduction -->
 
 <section class="py-5">
 
 <div class="container">
 
-<div class="row">
+<div class="row align-items-center">
 
-<div class="col-lg-10 mx-auto text-center">
+<div class="col-lg-6">
 
 <h2 class="section-title">
 
@@ -186,9 +300,37 @@ Professional Bursary Administration
 
 <p>
 
-Enzani Consultants provides comprehensive bursary management services for government departments, SETAs, corporate organisations and educational institutions. Our solutions ensure transparent administration, compliance and successful learner support from application through to graduation.
+Enzani Consultants provides comprehensive bursary management solutions for government departments, SETAs, corporate organisations and educational institutions. We administer bursary programmes with professionalism, transparency and accountability while supporting learner success from application through to graduation.
 
 </p>
+
+<p>
+
+Our experienced team manages every aspect of the bursary lifecycle, ensuring that sponsors, institutions and learners receive efficient administration, accurate reporting and continuous support.
+
+</p>
+
+<p>
+
+Whether your organisation requires complete programme outsourcing or assistance with selected administrative functions, our tailored solutions are designed to deliver measurable results.
+
+</p>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Discuss Your Programme
+
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<img src="images/bursary.jpg"
+
+class="img-fluid rounded shadow"
+
+alt="Bursary Management">
 
 </div>
 
@@ -198,63 +340,109 @@ Enzani Consultants provides comprehensive bursary management services for govern
 
 </section>
 
-<!-- Services -->
+<!-- Our Services -->
 
-<section class="pb-5">
+<section class="py-5 bg-light">
 
 <div class="container">
 
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Our Bursary Management Services
+
+</h2>
+
+<p class="lead">
+
+End-to-end administration designed to maximise programme success.
+
+</p>
+
+</div>
+
 <div class="row g-4">
 
-<div class="col-md-4">
+<div class="col-lg-4">
 
-<div class="card text-center p-4">
+<div class="card service-card p-4 text-center">
 
 <i class="bi bi-file-earmark-text-fill icon"></i>
 
-<h4 class="mt-3">Application Management</h4>
+<h4 class="mt-4">
+
+Application Management
+
+</h4>
 
 <p>
 
-Managing bursary applications, screening candidates and maintaining accurate records.
+Managing bursary applications, advertising opportunities, screening candidates and maintaining accurate applicant records throughout the selection process.
 
 </p>
 
-</div>
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Learn More
+
+</a>
 
 </div>
 
-<div class="col-md-4">
+</div>
 
-<div class="card text-center p-4">
+<div class="col-lg-4">
+
+<div class="card service-card p-4 text-center">
 
 <i class="bi bi-mortarboard-fill icon"></i>
 
-<h4 class="mt-3">Student Support</h4>
+<h4 class="mt-4">
+
+Student Support
+
+</h4>
 
 <p>
 
-Providing ongoing learner support throughout the academic programme.
+Providing ongoing learner support, academic monitoring, communication with institutions and assistance to ensure students successfully complete their qualifications.
 
 </p>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Learn More
+
+</a>
 
 </div>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-4">
 
-<div class="card text-center p-4">
+<div class="card service-card p-4 text-center">
 
-<i class="bi bi-bar-chart-fill icon"></i>
+<i class="bi bi-bar-chart-line-fill icon"></i>
 
-<h4 class="mt-3">Reporting & Compliance</h4>
+<h4 class="mt-4">
+
+Reporting & Compliance
+
+</h4>
 
 <p>
 
-Professional monitoring, reporting and compliance with sponsor requirements.
+Professional financial administration, compliance monitoring and comprehensive reporting to sponsors, SETAs and other stakeholders.
 
 </p>
+
+<a href="contact.html" class="btn btn-gold mt-3">
+
+Learn More
+
+</a>
 
 </div>
 
@@ -268,41 +456,53 @@ Professional monitoring, reporting and compliance with sponsor requirements.
 
 <!-- Benefits -->
 
-<section class="py-5 bg-light">
+<section class="py-5">
 
 <div class="container">
 
-<h2 class="section-title text-center">
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h2 class="section-title">
 
 Why Choose Our Bursary Management Services?
 
 </h2>
 
-<div class="row mt-5">
+<div class="card service-card p-4">
 
-<div class="col-lg-6">
+<ul class="list-unstyled mb-0">
 
-<ul class="list-group">
+<li class="mb-3">✔ End-to-end bursary programme administration</li>
 
-<li class="list-group-item">✔ End-to-end bursary administration</li>
+<li class="mb-3">✔ Transparent learner recruitment and selection</li>
 
-<li class="list-group-item">✔ Transparent selection process</li>
+<li class="mb-3">✔ Academic progress monitoring</li>
 
-<li class="list-group-item">✔ Student progress monitoring</li>
+<li class="mb-3">✔ Financial administration support</li>
 
-<li class="list-group-item">✔ Academic performance tracking</li>
+<li class="mb-3">✔ Regular stakeholder reporting</li>
 
-<li class="list-group-item">✔ Financial administration support</li>
+<li class="mb-3">✔ Governance, compliance and accountability</li>
 
-<li class="list-group-item">✔ Comprehensive reporting</li>
+<li class="mb-3">✔ Dedicated learner support services</li>
+
+<li>✔ Improved programme performance and outcomes</li>
 
 </ul>
 
 </div>
 
+</div>
+
 <div class="col-lg-6">
 
-<img src="images/bursary.jpg" class="img-fluid rounded shadow" alt="Bursary Management">
+<img src="images/student-success.jpg"
+
+class="img-fluid rounded shadow"
+
+alt="Student Success">
 
 </div>
 
@@ -311,58 +511,99 @@ Why Choose Our Bursary Management Services?
 </div>
 
 </section>
+<!-- Our Bursary Management Process -->
 
-<!-- Process -->
-
-<section class="py-5">
+<section class="py-5 bg-light">
 
 <div class="container">
 
-<h2 class="section-title text-center mb-5">
+<div class="text-center mb-5">
+
+<h2 class="section-title">
 
 Our Bursary Management Process
 
 </h2>
 
-<div class="row text-center">
+<p class="lead">
 
-<div class="col-md-3">
+A structured and transparent approach that supports sponsors and learners throughout the bursary lifecycle.
+
+</p>
+
+</div>
+
+<div class="row text-center g-4">
+
+<div class="col-lg-3 col-md-6">
 
 <i class="bi bi-search icon"></i>
 
-<h5>Recruitment</h5>
+<h4 class="mt-3">
 
-<p>Advertising and receiving applications.</p>
+Recruitment
+
+</h4>
+
+<p>
+
+Advertising bursary opportunities, receiving applications and attracting suitably qualified candidates.
+
+</p>
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
 <i class="bi bi-person-check-fill icon"></i>
 
-<h5>Selection</h5>
+<h4 class="mt-3">
 
-<p>Screening and selecting suitable candidates.</p>
+Selection
+
+</h4>
+
+<p>
+
+Conducting fair candidate screening, verification and selection in accordance with sponsor requirements.
+
+</p>
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
 <i class="bi bi-book-half icon"></i>
 
-<h5>Support</h5>
+<h4 class="mt-3">
 
-<p>Academic monitoring and learner support.</p>
+Student Support
+
+</h4>
+
+<p>
+
+Monitoring academic performance, maintaining communication with institutions and providing ongoing learner support.
+
+</p>
 
 </div>
 
-<div class="col-md-3">
+<div class="col-lg-3 col-md-6">
 
 <i class="bi bi-clipboard-data-fill icon"></i>
 
-<h5>Reporting</h5>
+<h4 class="mt-3">
 
-<p>Regular reports and compliance management.</p>
+Reporting
+
+</h4>
+
+<p>
+
+Providing financial administration, compliance reporting and programme performance updates to stakeholders.
+
+</p>
 
 </div>
 
@@ -372,9 +613,87 @@ Our Bursary Management Process
 
 </section>
 
-<!-- CTA -->
+<!-- Why Choose Enzani -->
 
-<section class="py-5 bg-light text-center">
+<section class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Why Partner With Enzani Consultants?
+
+</h2>
+
+</div>
+
+<div class="row text-center">
+
+<div class="col-lg-4 mb-4">
+
+<i class="bi bi-award-fill icon"></i>
+
+<h4 class="mt-3">
+
+Professional Expertise
+
+</h4>
+
+<p>
+
+Our experienced consultants manage bursary programmes with professionalism, integrity and measurable outcomes.
+
+</p>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<i class="bi bi-building-check icon"></i>
+
+<h4 class="mt-3">
+
+Governance & Compliance
+
+</h4>
+
+<p>
+
+Ensuring every bursary programme complies with sponsor policies, funding requirements and regulatory standards.
+
+</p>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<i class="bi bi-people-fill icon"></i>
+
+<h4 class="mt-3">
+
+Learner Success
+
+</h4>
+
+<p>
+
+Supporting students throughout their academic journey while helping organisations develop future professionals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Call To Action -->
+
+<section class="py-5 text-center">
 
 <div class="container">
 
@@ -384,13 +703,13 @@ Looking for Professional Bursary Management?
 
 </h2>
 
-<p>
+<p class="lead mb-4">
 
-Our experienced consultants can manage your bursary programme efficiently while ensuring transparency, accountability and learner success.
+Partner with Enzani Consultants to manage your bursary programme with efficiency, transparency and accountability while empowering the next generation of skilled professionals.
 
 </p>
 
-<a href="contact.html" class="btn btn-primary btn-lg">
+<a href="contact.html" class="btn btn-gold btn-lg">
 
 Request a Consultation
 
@@ -408,9 +727,13 @@ Request a Consultation
 
 <div class="row">
 
-<div class="col-md-4">
+<div class="col-lg-4 mb-4">
 
-<h4>Enzani Consultants</h4>
+<h4>
+
+Enzani Consultants
+
+</h4>
 
 <p>
 
@@ -418,32 +741,89 @@ Professional Training<br>
 
 Leadership Development<br>
 
+Management Development<br>
+
+Executive Coaching<br>
+
 Human Capital Consulting
 
 </p>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-4 mb-4">
 
-<h5>Quick Links</h5>
+<h5>
+
+Quick Links
+
+</h5>
 
 <p><a href="index.html">Home</a></p>
+
 <p><a href="about.html">About Us</a></p>
-<p><a href="training.html">Training</a></p>
-<p><a href="contact.html">Contact</a></p>
+
+<p><a href="training.html">Training Offering</a></p>
+
+<p><a href="learnerships.html">Learnerships & Internships</a></p>
+
+<p><a href="bursary.html">Bursary Management</a></p>
+
+<p><a href="coaching.html">Executive Coaching</a></p>
+
+<p><a href="seta.html">SETA Support Services</a></p>
+
+<p><a href="contact.html">Contact Us</a></p>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-lg-4">
 
-<h5>Contact Us</h5>
+<h5>
 
-<p><i class="bi bi-telephone"></i> 082 326 6054</p>
+Contact Information
 
-<p><i class="bi bi-envelope"></i> info@enzaniconsultants.co.za</p>
+</h5>
 
-<p><i class="bi bi-geo-alt"></i> South Africa</p>
+<p>
+
+<i class="bi bi-telephone-fill"></i>
+
+082 326 6054
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+hello@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+genoulda@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+wendy@enzaniconsulting.co.za
+
+</p>
+
+<p>
+
+<i class="bi bi-geo-alt-fill"></i>
+
+South Africa
+
+</p>
 
 </div>
 
@@ -453,9 +833,18 @@ Human Capital Consulting
 
 <div class="text-center">
 
-© 2026 Enzani Consultants. All Rights Reserved.<br>
+<p class="mb-0">
 
-Website Designed & Developed by <strong>The Entity Solutions (Pty) Ltd</strong>
+© 2026 Enzani Consultants. All Rights Reserved.
+
+</p>
+
+<p>
+
+Website Designed & Developed by
+<strong>The Entity Solutions (Pty) Ltd</strong>
+
+</p>
 
 </div>
 
@@ -463,13 +852,21 @@ Website Designed & Developed by <strong>The Entity Solutions (Pty) Ltd</strong>
 
 </footer>
 
-<a href="https://wa.me/27823266054" class="whatsapp" target="_blank">
+<!-- WhatsApp -->
+
+<a href="https://wa.me/27823266054"
+class="whatsapp"
+target="_blank"
+title="Chat with us on WhatsApp">
 
 <i class="bi bi-whatsapp"></i>
 
 </a>
 
+<!-- Bootstrap -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

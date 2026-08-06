@@ -186,24 +186,18 @@ Send Us an Enquiry
 
 </h2>
 
-<form>
+<form id="whatsappForm">
 
 <div class="row">
 
 <div class="col-md-6 mb-3">
-
 <label class="form-label">Full Name</label>
-
-<input type="text" class="form-control" placeholder="Enter your name">
-
+<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
 </div>
 
 <div class="col-md-6 mb-3">
-
 <label class="form-label">Company Name</label>
-
-<input type="text" class="form-control" placeholder="Company">
-
+<input type="text" class="form-control" id="company" placeholder="Company">
 </div>
 
 </div>
@@ -211,19 +205,13 @@ Send Us an Enquiry
 <div class="row">
 
 <div class="col-md-6 mb-3">
-
 <label class="form-label">Email Address</label>
-
-<input type="email" class="form-control" placeholder="example@email.com">
-
+<input type="email" class="form-control" id="email" placeholder="example@email.com" required>
 </div>
 
 <div class="col-md-6 mb-3">
-
 <label class="form-label">Phone Number</label>
-
-<input type="text" class="form-control" placeholder="082 000 0000">
-
+<input type="text" class="form-control" id="phone" placeholder="082 000 0000">
 </div>
 
 </div>
@@ -232,7 +220,7 @@ Send Us an Enquiry
 
 <label class="form-label">Service Required</label>
 
-<select class="form-select">
+<select class="form-select" id="service">
 
 <option>Select a Service</option>
 
@@ -252,7 +240,7 @@ Send Us an Enquiry
 
 <option>Higher Education Partnerships</option>
 
-<option>Future Skills Academy</option> 
+<option>Future Skills Academy</option>
 
 </select>
 
@@ -262,11 +250,11 @@ Send Us an Enquiry
 
 <label class="form-label">Message</label>
 
-<textarea class="form-control" rows="6" placeholder="Tell us how we can assist you..."></textarea>
+<textarea class="form-control" id="message" rows="6" placeholder="Tell us how we can assist you..." required></textarea>
 
 </div>
 
-<button class="btn btn-primary btn-lg">
+<button type="submit" class="btn btn-primary btn-lg">
 
 <i class="bi bi-send-fill"></i>
 

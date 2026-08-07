@@ -22,53 +22,38 @@
 body{
     font-family:'Poppins',sans-serif;
     color:#222222;
-    background:#FFFFFF;
-    padding-top:140px;
+    background:#ffffff;
+    padding-top:120px;
 }
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
+.navbar{
+    background:#0B2346;
+}
 
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpg" width="250">
-        </a>
+.navbar-brand img{
+    height:70px;
+    width:auto;
+}
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+.navbar-nav .nav-link{
+    color:#ffffff !important;
+    font-weight:500;
+}
 
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
-                <li class="nav-item"><a class="nav-link" href="learnerships.html">Learnerships</a></li>
-                <li class="nav-item"><a class="nav-link" href="bursary.html">Bursary Management</a></li>
-                <li class="nav-item"><a class="nav-link" href="coaching.html">Executive Coaching</a></li>
-                <li class="nav-item"><a class="nav-link" href="seta.html">SETA Support</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-            </ul>
-        </div>
-
-    </div>
-</nav>
+.navbar-nav .nav-link:hover{
+    color:#C9A227 !important;
+}
 
 .hero{
     background:
     linear-gradient(rgba(11,35,70,.88),rgba(11,35,70,.88)),
     url('images/training.jpg');
-
     background-size:cover;
     background-position:center;
     min-height:650px;
     display:flex;
     align-items:center;
-    color:#FFFFFF;
+    color:#fff;
 }
 
 .hero h1{
@@ -77,34 +62,30 @@ body{
 }
 
 .hero p{
-    color:#FFFFFF;
+    color:#fff;
 }
 
 .btn-gold{
     background:#C9A227;
-    color:#FFFFFF;
-    font-weight:600;
+    color:#fff;
     border:none;
-    padding:12px 28px;
-    transition:.3s;
 }
 
 .btn-gold:hover{
     background:#B68E20;
-    color:#FFFFFF;
+    color:#fff;
 }
 
 .section-title{
     color:#0B2346;
     font-weight:700;
-    margin-bottom:20px;
 }
 
 .service-card{
-    transition:.3s;
     border:none;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .service-card:hover{
@@ -117,21 +98,12 @@ body{
 }
 
 .why-section{
-    background:#F5F5F5;
-}
-
-.feature-box{
-    padding:20px;
-}
-
-.feature-box h5{
-    color:#0B2346;
-    font-weight:600;
+    background:#f5f5f5;
 }
 
 footer{
     background:#0B2346;
-    color:#FFFFFF;
+    color:#fff;
 }
 
 footer h4,
@@ -140,7 +112,7 @@ footer h5{
 }
 
 footer a{
-    color:#FFFFFF;
+    color:#fff;
     text-decoration:none;
 }
 
@@ -154,12 +126,12 @@ footer a:hover{
     right:20px;
     width:60px;
     height:60px;
-    border-radius:50%;
     background:#25D366;
-    color:#FFFFFF;
+    border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
+    color:#fff;
     font-size:30px;
     text-decoration:none;
     z-index:999;
@@ -172,74 +144,74 @@ footer a:hover{
 <body>
 
 <!-- Navigation -->
-
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
     <div class="container">
+
+        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpg" width="250" class="me-2" alt="Enzani Consultants Logo">
+            <img src="images/logo.jpg" alt="Enzani Consultants Logo">
         </a>
-        ...
+
+        <!-- Mobile Menu Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="training.html">Training</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="learnerships.html">Learnerships</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bursary.html">Bursary Management</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="coaching.html">Executive Coaching</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="seta.html">SETA Support</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
-</nav>
-
-<div class="container">
-
-<a class="navbar-brand" href="index.html">
-
-<img src="images/logo.jpg" width="250" class="me-2">
-
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link active" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About Us</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="training.html">Training</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="learnerships.html">Learnerships</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="bursary.html">Bursary Management</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="coaching.html">Executive Coaching</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="seta.html">SETA Support</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
 
 </nav>
+
+<!-- Hero Section -->
 
 <!-- Hero Section -->
 

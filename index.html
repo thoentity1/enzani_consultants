@@ -18,10 +18,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* ================================
+   HOMEPAGE CAROUSEL
+================================ */
+
 .carousel-image {
     width: 100%;
-    height: 900px;
+    height: 380px;
     object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+}
+
+.carousel-indicators {
+    margin-bottom: 12px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* ================================
+   MOBILE CAROUSEL
+================================ */
+
+@media (max-width: 768px) {
+
+    .carousel-image {
+        height: 260px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .carousel-image {
+        height: 220px;
+    }
+
 }
 
 .carousel-control-prev,
